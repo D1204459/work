@@ -1,78 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Please Wait</title>
-
-    <meta name="theme-color" content="#b721ff">
-
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&family=Noto+Sans+TC:wght@100..900&family=Sriracha&display=swap&text=0123456789" rel="stylesheet">
-    <!--上一行1.css與css2差別 2.wght@200..900 字的大小 3.swap&text=0123456789 text...可讓網頁速度變快，SEO效率變快-->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>演唱會購票系統</title>
     <style>
-        html { height:100%; overflow:hidden; }
         body {
-            height:100%;
-            margin:0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            background-color: darkseagreen;
-            user-select: none;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            position:relative;
-            overflow:hidden;
-        }
-
-        /*圖片離網頁頂端邊界的距離*/
-        .title {
-            margin:2em 0 0 0;
-            width: min(600px,80%);
-        }
-
-        .sloth-img {
-            height:0;
-            flex-grow:1;
-            width:100%;
-            max-width: 800px;
-            background-position: bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-            touch-action: manipulation;
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
             text-align: center;
-            color:white;
-            -webkit-text-stroke-width: 3px;
-            -webkit-text-stroke-color: black;
-            font-weight:500;
-            font-size:200px;
-            font-family: 'Madimi One', sans-serif;
-            word-wrap: break-word;
+            margin: 0;
+            padding: 0;
         }
-
-        @media(min-width:1000px) {
-            .title {
-                width: min(400px,80%);
-            }
-            .sloth-img {
-                font-size: 40px;
-                -webkit-text-stroke-width: 2px;
-            }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-
+        .waiting-text {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .waiting-image {
+            margin-bottom: 30px;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+        }
     </style>
 </head>
-
 <body>
-
-
-<div class="sloth-img" >......Please Wait........Be patience......</div>
-<!--div:區塊、容器; id為獨一無二的-->
-
+<div class="container">
+    <h1>購票系統</h1>
+    <div class="waiting-text">購票人數太多，請稍等...</div>
+    <img src="IU.jap">
+</div>
 </body>
 </html>
