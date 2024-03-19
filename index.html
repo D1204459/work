@@ -6,25 +6,34 @@
     <title>演唱會購票系統</title>
     <style>
         body {
-            font-family:"sans-serif";
-            background-color: #EE66B0D1;
+            font-family: 'Madimi One', sans-serif;
+            background-color: rgba(231, 170, 200, 0.82);
             text-align: center;
-            margin:10em;
-            padding: 0;
+            margin:10em 0 0 0;
+        }
+        h1 {
+            font-size: 80px; /* 修改標題字體大小為60像素 */
         }
         .waiting-text {
             font-size: 40px;
             margin-bottom: 60px;
         }
+        .waiting-image {
+            width: 1500px; /* 設定寬度為300像素 */
+            height: auto; /* 讓高度自動調整以保持原始圖片的比例 */
+        }
+
+        .w3-container h1 {
+            font-size: 60px; /* 修改包含"w3-container"類別的標題字體大小為36像素 */
+        }
 
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>IU 演唱會購票系統等待畫面</h1>
-    <div class="waiting-text">購票人數眾多，請稍等...</div>
-    <img src="IU.pag" alt="Concert Image" class="waiting-image">
-
+<h1>IU 演唱會購票系統等待畫面</h1>
+<div class="w3-container w3-teal">
+    <h1>購票人數眾多 請稍後.....</h1>
+    <img src="IU.jpg" alt="Concert Image" class="waiting-image">
 </div>
 </body>
 </html>
